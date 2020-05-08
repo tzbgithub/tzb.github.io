@@ -1,15 +1,16 @@
 # Hello!
 
 
-### There is some guides for you.
+### Some goals for this blog.
 
-- share the knowledge i learn
-- open for an achievement
+- Share the knowledge i learn
+- Open for an achievement
 
 
 # Editor.md
+![](https://github.com/tzbgithub/tzbgithub.github.io/blob/master/tzbPic.jpg)
 
-![](https://github.com/tzbgithub/tzbgithub.github.io/blob/master/%E7%AE%80%E5%8E%86%E7%85%A7%E7%89%87tzbPic.jpg)
+> myPhoto.
 
 **目录 (Table of Contents)**
 
