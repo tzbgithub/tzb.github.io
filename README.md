@@ -32,6 +32,7 @@
      * Default initial capacity.
      */
     private static final int DEFAULT_CAPACITY = 10;
+
 ### EMPTY_ELEMENTDATA
     /**
      * Shared empty array instance used for empty instances.
@@ -54,6 +55,7 @@
      * will be expanded to DEFAULT_CAPACITY when the first element is added.
      */
     transient Object[] elementData; // non-private to simplify nested class access
+
 **目录 (Table of Contents)**
 
 [TOCM]
