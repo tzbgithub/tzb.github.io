@@ -56,6 +56,54 @@
      */
     transient Object[] elementData; // non-private to simplify nested class access
 
+### 构造器
+
+ /**/自定义初始的容量参数的
+     * Constructs an empty list with the specified initial capacity.
+     *
+     * @param  initialCapacity  the initial capacity of the list
+     * @throws IllegalArgumentException if the specified initial capacity
+     *         is negative
+     */
+    public ArrayList(int initialCapacity) {
+        if (initialCapacity > 0) {
+            this.elementData = new Object[initialCapacity];
+        } else if (initialCapacity == 0) {
+            this.elementData = EMPTY_ELEMENTDATA;
+        } else {
+            throw new IllegalArgumentException("Illegal Capacity: "+
+                                               initialCapacity);
+        }
+    }
+
+    /**//空的数组
+     * Constructs an empty list with an initial capacity of ten.
+     */
+    public ArrayList() {
+        this.elementData = DEFAULTCAPACITY_EMPTY_ELEMENTDATA;
+    }
+
+    /**把某个Collection的关系保持到Arraylist里面，然后返回这个具有Collection实体关系的arraylist对象
+     * Constructs a list containing the elements of the specified
+     * collection, in the order they are returned by the collection's
+     * iterator.
+     *
+     * @param c the collection whose elements are to be placed into this list
+     * @throws NullPointerException if the specified collection is null
+     */
+    public ArrayList(Collection<? extends E> c) {
+        elementData = c.toArray();
+        if ((size = elementData.length) != 0) {
+            // c.toArray might (incorrectly) not return Object[] (see 6260652)
+            if (elementData.getClass() != Object[].class)
+                elementData = Arrays.copyOf(elementData, size, Object[].class);
+        } else {
+            // replace with empty array.
+            this.elementData = EMPTY_ELEMENTDATA;
+        }
+    }
+
+
 **目录 (Table of Contents)**
 
 [TOCM]
