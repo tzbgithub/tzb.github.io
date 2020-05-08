@@ -45,7 +45,8 @@
      * first element is added.
      */ //空的数组
     private static final Object[] DEFAULTCAPACITY_EMPTY_ELEMENTDATA = {};
- ### ArrayList存储数组
+    
+### ArrayList存储数组
      /**
      * The array buffer into which the elements of the ArrayList are stored.
      * The capacity of the ArrayList is the length of this array buffer. Any
