@@ -7,11 +7,52 @@
 - Open for an achievement
 
 
-# Editor.md
-![](https://github.com/tzbgithub/tzbgithub.github.io/blob/master/tzbPic.jpg)
+# ArrayList
 
-> myPhoto.
+## 特性
+	1. 实现List接口
+	2. 可以操作数组的大小
+	3. 大概等于Vector（除了是不线程安全）
+	4. 复杂度：
+		a. add方法，添加n个元素，O（n）
+		b. 其他方法：O(1)，不会随着n变大而变化
+	5. 容量capacity
+		a. 容量大于等于arraylist.size
+	6. 安全
+		a. 如果有封装arraylist的对象，对这些对象进行同步
+		b. 如果没有这些对象，这些arraylist要在创建的时候wrapped（封装），防止异步访问
+			i. List list = Collections.synchronizedList(new ArrayList(...));
+	7. 快速失败
+		a. 迭代器除了自身的add/remove，任何时候arraylist被structurally modified都会抛出ConcurrentModificationException，抛出异常后，迭代器快速失败，清理掉
+		
+## 基本初始化参数
 
+### 默认容量
+    /**容量默认10
+     * Default initial capacity.
+     */
+    private static final int DEFAULT_CAPACITY = 10;
+### EMPTY_ELEMENTDATA
+    /**
+     * Shared empty array instance used for empty instances.
+     */
+    private static final Object[] EMPTY_ELEMENTDATA = {};
+    
+### DEFAULTCAPACITY_EMPTY_ELEMENTDATA
+    /**
+     * Shared empty array instance used for default sized empty instances. We
+     * distinguish this from EMPTY_ELEMENTDATA to know how much to inflate when
+     * first element is added.
+     */ //空的数组
+    private static final Object[] DEFAULTCAPACITY_EMPTY_ELEMENTDATA = {};
+ ### ArrayList存储数组
+     /**
+     * The array buffer into which the elements of the ArrayList are stored.
+     * The capacity of the ArrayList is the length of this array buffer. Any
+     * empty ArrayList with elementData == DEFAULTCAPACITY_EMPTY_ELEMENTDATA
+     * will be expanded to DEFAULT_CAPACITY when the first element is added.
+     */
+    transient Object[] elementData; // non-private to simplify nested class access
 **目录 (Table of Contents)**
 
 [TOCM]
