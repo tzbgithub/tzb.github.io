@@ -11,8 +11,6 @@
 
 ![](https://github.com/tzbgithub/tzbgithub.github.io/blob/master/%E7%AE%80%E5%8E%86%E7%85%A7%E7%89%87tzbPic.jpg)
 
-![](https://img.shields.io/github/stars/pandao/editor.md.svg) ![](https://img.shields.io/github/forks/pandao/editor.md.svg) ![](https://img.shields.io/github/tag/pandao/editor.md.svg) ![](https://img.shields.io/github/release/pandao/editor.md.svg) ![](https://img.shields.io/github/issues/pandao/editor.md.svg) ![](https://img.shields.io/bower/v/editor.md.svg)
-
 **目录 (Table of Contents)**
 
 [TOCM]
